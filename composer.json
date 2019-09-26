@@ -1,0 +1,42 @@
+{
+    "name": "simplesquid/nova-vend",
+    "description": "A Laravel Nova tool for our PHP SDK and Laravel package for Vend POS.",
+    "type": "library",
+    "keywords": [
+        "laravel",
+        "nova",
+        "php",
+        "sdk",
+        "point-of-sale",
+        "vend"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Matthew Poulter",
+            "email": "matthew.poulter@simplesquid.co.za",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "simplesquid/laravel-vend-sdk": "^0.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "SimpleSquid\\NovaVend\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SimpleSquid\\NovaVend\\ToolServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

@@ -1,0 +1,16 @@
+composer.phar
+/vendor
+
+/node_modules
+package-lock.json
+
+phpunit.xml
+.phpunit.*
+phpdox.xml
+
+/.idea
+
+.DS_Store
+Thumbs.db
+
+composer.lock
