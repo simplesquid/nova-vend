@@ -1,42 +1,53 @@
 {
-    "name": "simplesquid/nova-vend",
-    "description": "A Laravel Nova tool for our PHP SDK and Laravel package for Vend POS.",
-    "type": "library",
-    "keywords": [
-        "laravel",
-        "nova",
-        "php",
-        "sdk",
-        "point-of-sale",
-        "vend"
-    ],
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Matthew Poulter",
-            "email": "matthew.poulter@simplesquid.co.za",
-            "role": "Developer"
-        }
-    ],
-    "require": {
-        "php": "^7.2",
-        "simplesquid/laravel-vend-sdk": "^0.2"
-    },
-    "autoload": {
-        "psr-4": {
-            "SimpleSquid\\NovaVend\\": "src/"
-        }
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "SimpleSquid\\NovaVend\\ToolServiceProvider"
-            ]
-        }
-    },
-    "config": {
-        "sort-packages": true
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+  "name": "simplesquid/nova-vend",
+  "description": "A Laravel Nova tool for our PHP SDK and Laravel package for Vend POS.",
+  "type": "library",
+  "keywords": [
+    "laravel",
+    "nova",
+    "php",
+    "sdk",
+    "point-of-sale",
+    "vend"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Matthew Poulter",
+      "email": "matthew.poulter@simplesquid.co.za",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "^7.2",
+    "laravel/nova": "^2.0",
+    "illuminate/support": "^5.8|^6.0",
+    "simplesquid/laravel-vend-sdk": "^0.2"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^3.8|^4.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "SimpleSquid\\NovaVend\\": "src/"
+    }
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://nova.laravel.com"
+    }
+  ],
+  "extra": {
+    "laravel": {
+      "providers": [
+        "SimpleSquid\\NovaVend\\ToolServiceProvider"
+      ]
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
 }

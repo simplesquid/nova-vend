@@ -14,3 +14,4 @@ phpdox.xml
 Thumbs.db
 
 composer.lock
+auth.json
