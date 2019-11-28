@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Support\Vend\VendTokenManager;
+use SimpleSquid\LaravelVend\VendTokenManager;
 
 /*
 |--------------------------------------------------------------------------
